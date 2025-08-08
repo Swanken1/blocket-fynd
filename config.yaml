@@ -1,0 +1,38 @@
+general:
+  output_csv: results.csv
+  max_age_hours: 72
+  require_price: true
+
+ref_prices:
+  "Stringhylla": 1500
+  "Stringhylla 75": 2500
+  "PH 5": 4000
+  "Bruno Mathsson": 7000
+  "Lamino": 8000
+  "Svenskt Tenn": 1500
+  "Sonos One": 1000
+  "Sonos Beam": 1800
+  "Sonos Arc": 6000
+  "Sonos Sub": 3500
+
+watchlists:
+  - name: "Design & Möbler"
+    query: "Stringhylla OR PH 5 OR Bruno Mathsson OR Lamino OR Svenskt Tenn"
+    region: "stockholm"
+    max_price: 10000
+    min_price: 500
+    exclude: ["replika", "replica", "trasig", "defekt"]
+    seller_type: "private"
+
+  - name: "Sonos – Paket & Ljud"
+    query: "Sonos"
+    region: "sweden"
+    max_price: 8000
+    min_price: 800
+    exclude: ["trasig", "saknas"]
+    seller_type: ""
+
+scoring:
+  over_penalty_per_10pct: 8
+  under_bonus_per_10pct: 10
+  fresh_bonus: 10

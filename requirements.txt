@@ -1,0 +1,5 @@
+requests
+python-dateutil
+pandas
+pyyaml
+blocket_api
